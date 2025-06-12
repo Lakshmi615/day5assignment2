@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content-area">
+        <ul class="star-list">
+            <li>Hummus</li>
+            <li>Pita</li>
+            <li>Green salad</li>
+            <li>Halloumi</li>
+        </ul>
+    </div>
+</body>
+</html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.content-area {
+    padding: 40px;
+}
+
+.star-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.star-list li {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.star-list li::before {
+    content: '\2B50';
+    position: relative;
+    left: 0;
+    color: #ff4500;
+    font-size: 1.2em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+</style>
